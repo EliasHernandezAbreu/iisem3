@@ -1,6 +1,6 @@
 # Interfaces Inteligentes seminario 3
 
-Qué funciones se pueden usar en los scripts de Unity para llevar a cabo traslaciones, rotaciones y escalados.
+* *Qué funciones se pueden usar en los scripts de Unity para llevar a cabo traslaciones, rotaciones y escalados.*
 Translaciones:
 Translate
 Rotaciones:
@@ -14,7 +14,7 @@ Como trasladarías la cámara 2 metros en cada uno de los ejes y luego la rotas 
 	transform.Rotate(0, 30, 0);
 
 	No se obtiene el mismo resultado ya que translate usa los ejes locales del objeto, que cambian al realizar la rotación.
-Sitúa la esfera de radio 1 en el campo de visión de la cámara y configura un volumen de vista que la recorte parcialmente.
+* *Sitúa la esfera de radio 1 en el campo de visión de la cámara y configura un volumen de vista que la recorte parcialmente.*
 
 Sitúa la esfera de radio 1 en el campo de visión de la cámara y configura el volumen de vista para que la deje fuera de la vista.
 
