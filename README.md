@@ -11,16 +11,20 @@ Escalados:
 Usar propiedad localScale
 
 2. **Como trasladarías la cámara 2 metros en cada uno de los ejes y luego la rotas 30º alrededor del eje Y?. Rota la cámara alrededor del eje Y 30ª y desplázala 2 metros en cada uno de los ejes. ¿Obtendrías el mismo resultado en ambos casos?. Justifica el resultado**
-	transform.Translate(2, 2, 2);
-	transform.Rotate(0, 30, 0);
 
-	No se obtiene el mismo resultado ya que translate usa los ejes locales del objeto, que cambian al realizar la rotación.
+transform.Translate(2, 2, 2);
+transform.Rotate(0, 30, 0);
+
+No se obtiene el mismo resultado ya que translate usa los ejes locales del objeto, que cambian al realizar la rotación.
+
 3. **Sitúa la esfera de radio 1 en el campo de visión de la cámara y configura un volumen de vista que la recorte parcialmente.**
 
 4. **Sitúa la esfera de radio 1 en el campo de visión de la cámara y configura el volumen de vista para que la deje fuera de la vista.**
 
 5. **Como puedes aumentar el ángulo de la cámara. Qué efecto tiene disminuir el ángulo de la cámara.**
-	Aumentando el FOV (Field of View). Tiene efecto de zoom, haciendo que todo se vea más grande
+
+ Aumentando el FOV (Field of View). Tiene efecto de zoom, haciendo que todo se vea más grande
+
 6. **Es correcta la siguiente afirmación: Para realizar la proyección al espacio 2D, en el inspector de la cámara, cambiaremos el valor de projection, asignándole el valor de orthographic**
 
 7. **Especifica las rotaciones que se han indicado en los ejercicios previos con la utilidad quaternion.**
