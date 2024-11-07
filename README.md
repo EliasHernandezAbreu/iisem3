@@ -27,15 +27,27 @@ No se obtiene el mismo resultado ya que translate usa los ejes locales del objet
 
 6. **Es correcta la siguiente afirmación: Para realizar la proyección al espacio 2D, en el inspector de la cámara, cambiaremos el valor de projection, asignándole el valor de orthographic**
 
+Sí.
+
 7. **Especifica las rotaciones que se han indicado en los ejercicios previos con la utilidad quaternion.**
+
+La rotación en Euler de (0, 30, 0) equivale a un cuaternión de (0.00000, 0.25882, 0.00000, 0.96593)
 
 8. **¿Como puedes averiguar la matriz de proyección en perspectiva que se ha usado para proyectar la escena al último frame renderizado?.**
 
+Usando Camera.projectionMatrix
+
 9. **¿Como puedes averiguar la matriz de proyección en perspectiva ortográfica que se ha usado para proyectar la escena al último frame renderizado?.**
+
+De la misma manera, con Camera.projectionMatrix
 
 10. **¿Cómo puedes obtener la matriz de transformación entre el sistema de coordenadas local y el mundial?.**
 
+Usando Transform.localToWorldMatrix
+
 11. **Cómo puedes obtener la matriz para cambiar al sistema de referencia de vista**
+
+Usando Camera.worldToCameraMatrix
 
 12. **Especifica la matriz de la proyección usado en un instante de la ejecución del ejercicio 1 de la práctica 1.**
 
