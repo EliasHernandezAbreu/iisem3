@@ -153,7 +153,8 @@ Además, Unity incorpora iluminación global, similar al concepto de radiosidad 
 
 En cuanto a los materiales, Unity permite definir propiedades que afectan la reflexión de la luz, como los coeficientes de reflexión para cada tipo de luz. Esto está en línea con lo visto en clase sobre cómo los materiales determinan la interacción con la luz.
 
-Por último, el uso de texturas en Unity es fundamental para agregar detalle y realismo a los objetos. Al igual que vimos, las texturas se mapean sobre las superficies y pueden influir en las propiedades de iluminación, como en el caso de los mapas de normales o especulares.
+Por último, el uso de texturas en Unity es fundamental para agregar detalle y realismo a los objetos. Al igual que vimos, las texturas se mapean sobre las superficies y pueden influir en las propiedades de iluminación, como en el caso de los mapas de normales o especulares
+
 17. **Indica las funciones de la API de Unity más importantes respecto a la iluminación**
 
 Light: Clase principal para crear y configurar luces.
