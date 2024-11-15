@@ -52,12 +52,95 @@ Usando Camera.worldToCameraMatrix
 
 12. **Especifica la matriz de la proyección usado en un instante de la ejecución del ejercicio 1 de la práctica 1.**
 
+Tenemos a partir de estos parámetros de la cámara:
+![imagen](img/12.png)
+
+Usando el siguiente script:
+
+```c#
+    Camera camera = Camera.main; // Accede a la cámara principal
+        Matrix4x4 projectionMatrix = camera.projectionMatrix; // Obtén la matriz de proyección
+        Debug.Log(projectionMatrix); // Imprime la matriz en la consola para visualizarla
+````
+
+Obtenemos la matriz de proyección por consola:
+
+```text
+0.85086	0.00000	0.00000	0.00000
+0.00000	1.73205	0.00000	0.00000
+0.00000	0.00000	-1.00060	-0.60018
+0.00000	0.00000	-1.00000	0.00000
+```
+
 13. **Especifica la matriz de modelo y vista de la escena del ejercicio 1 de la práctica 1.**
+
+Dado nuestro cubo en esta posición:
+![imagen](img/13.png)
+su matriz de modelo sería:
+
+```text
+1 0 0 0
+0 1 0 0.67
+0 0 1 0
+0 0 0 1
+```
+
+Por otro lado, la matriz de vista sería:
+
+```text
+0.85086	0.00000	0.00000	0.00000
+0.00000	1.73205	0.00000	0.00000
+0.00000	0.00000	-1.00060	-0.60018
+0.00000	0.00000	-1.00000	0.00000
+```
+
+Esto se ha sacado a partir del siguiente script atribuido a la cámara:
+
+```c#
+    Camera camera = Camera.main;
+    Matrix4x4 viewMatrix = camera.worldToCameraMatrix;
+    Debug.Log(viewMatrix);
+```
 
 14.**Aplica una rotación en el start de uno de los objetos de la escena y muestra la matriz de cambio al sistema de referencias mundial.**
 
+Obtenemos la matriz de cambio al sistema de referencias mundial del cubo al rotarlo 45 grados en el eje Y:
+```text
+0.70711	0.00000	0.70711	0.00000
+0.00000	1.00000	0.00000	0.67000
+-0.70711	0.00000	0.70711	0.00000
+0.00000	0.00000	0.00000	1.00000
+```
+
+Con el siguiente script:
+
+```c#
+void Start()
+    {
+        // Se aplica una rotación de 45 grados en el eje Y
+        transform.Rotate(0, 45, 0);
+
+        Matrix4x4 worldMatrix = transform.localToWorldMatrix;
+
+        Debug.Log("Matriz de cambio al sistema de referencias mundial:");
+        Debug.Log(worldMatrix);
+    }
+```
+
 15. **¿Como puedes calcular las coordenadas del sistema de referencia de un objeto con las siguientes propiedades del Transform:?: 
  Position (3, 1, 1), Rotation (45, 0, 45)**
+
+Se puede hacer construyendo una matriz de transformación global a partir de las propiedades del objeto dadas por transform:
+
+```c#
+    transform.position = new Vector3(3, 1, 1);
+    transform.rotation = Quaternion.Euler(45, 0, 45);
+
+    Matrix4x4 worldMatrix = transform.localToWorldMatrix;
+
+    Debug.Log("Matriz de transformación:");
+    Debug.Log(matrix);
+```
 
 16. **Investiga sobre los modelo de iluminación que aplica Unity y resume las relaciones existentes con el modelo explicado en clase.**
 
