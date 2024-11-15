@@ -76,7 +76,9 @@ Obtenemos la matriz de proyección por consola:
 13. **Especifica la matriz de modelo y vista de la escena del ejercicio 1 de la práctica 1.**
 
 Dado nuestro cubo en esta posición:
+
 ![imagen](img/13.png)
+
 su matriz de modelo sería:
 
 ```text
