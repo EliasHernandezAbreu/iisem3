@@ -158,13 +158,23 @@ Por último, el uso de texturas en Unity es fundamental para agregar detalle y r
 17. **Indica las funciones de la API de Unity más importantes respecto a la iluminación**
 
 Light: Clase principal para crear y configurar luces.
-Light.type: Define el tipo de luz (Directional, Point, Spot, etc.).
-Light.color: Establece el color de la luz.
-Light.intensity: Controla la intensidad o brillo de la luz.
-Light.range: Determina el alcance de una luz puntual o spot.
-Light.spotAngle: Especifica el ángulo del cono en luces tipo spot.
-Light.shadows: Configura el tipo de sombras que proyecta la luz.
-RenderSettings.ambientLight: Ajusta el color de la luz ambiental de la escena.
-RenderSettings.skybox: Define el material del cielo para efectos de iluminación global.
-Shader: Clase utilizada para crear y modificar shaders que determinan cómo se renderiza la luz en los materiales.
-DynamicGI.UpdateEnvironment(): Actualiza la iluminación global en tiempo de ejecución.
+
+`Light.type`: Define el tipo de luz (Directional, Point, Spot, etc.).
+
+`Light.color`: Establece el color de la luz.
+
+`Light.intensity`: Controla la intensidad o brillo de la luz.
+
+`Light.range`: Determina el alcance de una luz puntual o spot.
+
+`Light.spotAngle`: Especifica el ángulo del cono en luces tipo spot.
+
+`Light.shadows`: Configura el tipo de sombras que proyecta la luz.
+
+`RenderSettings.ambientLight`: Ajusta el color de la luz ambiental de la escena.
+
+`RenderSettings.skybox`: Define el material del cielo para efectos de iluminación global.
+
+`Shader`: Clase utilizada para crear y modificar shaders que determinan cómo se renderiza la luz en los materiales.
+
+`DynamicGI.UpdateEnvironment()`: Actualiza la iluminación global en tiempo de ejecución.
