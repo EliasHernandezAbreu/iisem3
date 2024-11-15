@@ -144,4 +144,25 @@ Se puede hacer construyendo una matriz de transformación global a partir de las
 
 16. **Investiga sobre los modelo de iluminación que aplica Unity y resume las relaciones existentes con el modelo explicado en clase.**
 
+Unity aplica diversos modelos de iluminación que se relacionan estrechamente con los conceptos explicados en clase. En primer lugar, utiliza la iluminación local, considerando los componentes ambiente, difuso y especular. Estos componentes simulan cómo la luz interactúa con las superficies de los objetos, tal como el modelo de iluminación local que vimos, donde la luz ambiente aporta una iluminación base, la luz difusa depende del ángulo entre la luz y la normal de la superficie, y la luz especular añade brillos según la posición del observador.
+
+En cuanto a las técnicas de sombreado, Unity implementa métodos como Gouraud y Phong. Al igual que en clase, el sombreado Gouraud interpola colores entre vértices para suavizar la apariencia, mientras que el sombreado Phong interpola las normales y calcula la iluminación por píxel, ofreciendo resultados más realistas.
+
+Además, Unity incorpora iluminación global, similar al concepto de radiosidad que estudiamos. Esto permite que los objetos no solo sean iluminados por fuentes directas, sino también por la luz reflejada en otros objetos de la escena, creando una iluminación más realista y coherente.
+
+En cuanto a los materiales, Unity permite definir propiedades que afectan la reflexión de la luz, como los coeficientes de reflexión para cada tipo de luz. Esto está en línea con lo visto en clase sobre cómo los materiales determinan la interacción con la luz.
+
+Por último, el uso de texturas en Unity es fundamental para agregar detalle y realismo a los objetos. Al igual que vimos, las texturas se mapean sobre las superficies y pueden influir en las propiedades de iluminación, como en el caso de los mapas de normales o especulares.
 17. **Indica las funciones de la API de Unity más importantes respecto a la iluminación**
+
+Light: Clase principal para crear y configurar luces.
+Light.type: Define el tipo de luz (Directional, Point, Spot, etc.).
+Light.color: Establece el color de la luz.
+Light.intensity: Controla la intensidad o brillo de la luz.
+Light.range: Determina el alcance de una luz puntual o spot.
+Light.spotAngle: Especifica el ángulo del cono en luces tipo spot.
+Light.shadows: Configura el tipo de sombras que proyecta la luz.
+RenderSettings.ambientLight: Ajusta el color de la luz ambiental de la escena.
+RenderSettings.skybox: Define el material del cielo para efectos de iluminación global.
+Shader: Clase utilizada para crear y modificar shaders que determinan cómo se renderiza la luz en los materiales.
+DynamicGI.UpdateEnvironment(): Actualiza la iluminación global en tiempo de ejecución.
