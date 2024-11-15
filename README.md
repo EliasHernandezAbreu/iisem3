@@ -53,6 +53,7 @@ Usando Camera.worldToCameraMatrix
 12. **Especifica la matriz de la proyección usado en un instante de la ejecución del ejercicio 1 de la práctica 1.**
 
 Tenemos a partir de estos parámetros de la cámara:
+
 ![imagen](img/12.png)
 
 Usando el siguiente script:
