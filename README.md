@@ -153,7 +153,7 @@ En cuanto a las técnicas de sombreado, Unity implementa métodos como Gouraud y
 
 Además, Unity incorpora iluminación global, similar al concepto de radiosidad que estudiamos. Esto permite que los objetos no solo sean iluminados por fuentes directas, sino también por la luz reflejada en otros objetos de la escena, creando una iluminación más realista y coherente.
 
-En cuanto a los materiales, Unity permite definir propiedades que afectan la reflexión de la luz, como los coeficientes de reflexión para cada tipo de luz. Esto está en línea con lo visto en clase sobre cómo los materiales determinan la interacción con la luz.
+En cuanto a los materiales, Unity permite definir propiedades que afectan la reflexión de la luz, como los coeficientes de reflexión para cada tipo de luz.
 
 Por último, el uso de texturas en Unity es fundamental para agregar detalle y realismo a los objetos. Al igual que vimos, las texturas se mapean sobre las superficies y pueden influir en las propiedades de iluminación, como en el caso de los mapas de normales o especulares
 
