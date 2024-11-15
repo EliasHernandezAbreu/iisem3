@@ -1,14 +1,15 @@
 # Interfaces Inteligentes seminario 3
 
 1. **Qué funciones se pueden usar en los scripts de Unity para llevar a cabo traslaciones, rotaciones y escalados.**
-Translaciones:
-Translate
-Rotaciones:
-LookAt
-Rotate
-RotateAround
-Escalados:
-Usar propiedad localScale
+
+* Translaciones:
+    * Translate
+* Rotaciones:
+    * LookAt
+    * Rotate
+    * RotateAround
+* Escalados:
+    * Usar propiedad localScale
 
 2. **Como trasladarías la cámara 2 metros en cada uno de los ejes y luego la rotas 30º alrededor del eje Y?. Rota la cámara alrededor del eje Y 30ª y desplázala 2 metros en cada uno de los ejes. ¿Obtendrías el mismo resultado en ambos casos?. Justifica el resultado**
 
